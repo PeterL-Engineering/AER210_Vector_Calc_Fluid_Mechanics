@@ -3,12 +3,12 @@
 % Optional math commands from https://github.com/goodfeli/dlbook_notation.
 \input{math_commands.tex}
 
-%######## MAT292: Uncomment your submission name
+%######## AER210: Uncomment your submission name
 %\newcommand{\aername}{ - Project Proposal}
 %\newcommand{\aername}{Progress Report}
 %\newcommand{\aername}{Final Report}
 
-%######## MAT292: Put your Group Number here
+%######## AER210: Put your Group Number here
 %\newcommand{\gpnumber}{40}
 
 \usepackage{hyperref}
@@ -21,14 +21,15 @@
 \usepackage{tikz}
 \usepackage{multicol}
 
-%######## MAT292: Put your project Title here
+%######## AER210: Put your project Title here
 \title{Real-Time Neural Signal Filtering via \\
 Hodgkin-Huxley Simulation Models}
 
-%######## MAT292: Put your names, student IDs and Emails here
-\author{Peter Leong \\
-Student\# 1010892955 \\
-peter.leong@mail.utoronto.ca \\
+%######## AER210: Put your names, student IDs and Emails here
+\author{
+    Peter Leong \\
+    Student\# 1010892955 \\
+    peter.leong@mail.utoronto.ca \\
 \AND
 }
 
@@ -44,7 +45,7 @@ peter.leong@mail.utoronto.ca \\
 \newcommand{\new}{\marginpar{NEW}}
 
 \iclrfinalcopy 
-%######## MAT292: Document starts here
+%######## AER210: Document starts here
 \begin{document}
 
 \maketitle
@@ -56,7 +57,7 @@ This project addresses the challenge of automated colourization for 256$\times$2
 animals, and natural scenery. We frame colourization as a supervised learning problem in the CIELAB colour space, where a model predicts chrominance channels ($a^*$, $b^*$) 
 from the luminance channel ($L^*$). A shallow convolutional neural network (CNN) provides the baseline performance, while our primary solution employs a deeper convolutional 
 encoder-decoder architecture. This design captures high-level semantic features and spatial context, addressing limitations of shallow networks in perceptual realism.
-%######## MAT292: Do not change the next line. This shows your Main body page count.
+%######## AER210: Do not change the next line. This shows your Main body page count.
 ----Total Pages: \pageref{last_page}
 \end{abstract}
 
@@ -69,7 +70,7 @@ encoder-decoder architecture. This design captures high-level semantic features 
 \section{Scope \& Feasibility}
 
 Begin by solving Hudgkin-Huxley equations using Euler's and Improved Euler's Method (since these are the methods we have learned thus far from ESC103)
-then expand and solve using Runge-Kutta methods once they are covered in MAT292. At a high-level, these solvers will generate synthetic neural data through
+then expand and solve using Runge-Kutta methods once they are covered in AER210. At a high-level, these solvers will generate synthetic neural data through
 the Hodgkin-Huxley equations which are a set of non-linear ordinary differential equations that describe how ion channels create action potential.
 
 Following this we will design and implement a digital filter to isolate the spike band, and create a spike detection algorithm based upon an adaptive threshold
@@ -83,7 +84,7 @@ derived from the signal's noise floor.
 
 \newpage
 \bibliographystyle{iclr2022_conference}
-\bibliography{MAT292_Proposal_Ref}
+\bibliography{AER210_Proposal_Ref}
 
 \end{multicols}
 \end{document}
