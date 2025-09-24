@@ -4,7 +4,7 @@
 \input{math_commands.tex}
 
 %######## AER210: Uncomment your submission name
-%\newcommand{\aername}{ - Project Proposal}
+\newcommand{\aername}{ - Lab Report}
 %\newcommand{\aername}{Progress Report}
 %\newcommand{\aername}{Final Report}
 
@@ -53,10 +53,6 @@ Hodgkin-Huxley Simulation Models}
 \vspace{-6ex}
 
 \begin{abstract}
-This project addresses the challenge of automated colourization for 256$\times$256 grayscale images using a dataset of 12,600 image pairs, balanced across human subjects, 
-animals, and natural scenery. We frame colourization as a supervised learning problem in the CIELAB colour space, where a model predicts chrominance channels ($a^*$, $b^*$) 
-from the luminance channel ($L^*$). A shallow convolutional neural network (CNN) provides the baseline performance, while our primary solution employs a deeper convolutional 
-encoder-decoder architecture. This design captures high-level semantic features and spatial context, addressing limitations of shallow networks in perceptual realism.
 %######## AER210: Do not change the next line. This shows your Main body page count.
 ----Total Pages: \pageref{last_page}
 \end{abstract}
@@ -67,14 +63,35 @@ encoder-decoder architecture. This design captures high-level semantic features 
 
 \section{Introduction}
 
-\section{Scope \& Feasibility}
+\section{Methods \& Procedure}
 
-Begin by solving Hudgkin-Huxley equations using Euler's and Improved Euler's Method (since these are the methods we have learned thus far from ESC103)
-then expand and solve using Runge-Kutta methods once they are covered in AER210. At a high-level, these solvers will generate synthetic neural data through
-the Hodgkin-Huxley equations which are a set of non-linear ordinary differential equations that describe how ion channels create action potential.
+This section outlines various experiment procedure and also the preparation of equipment including Flowcoach operation and FlowEx.
 
-Following this we will design and implement a digital filter to isolate the spike band, and create a spike detection algorithm based upon an adaptive threshold
-derived from the signal's noise floor.
+\subsection{Flowcoach Apparatus}
+
+The main purpose of the Flowcoach apparatus is to examine the flow of molecules around various model inserts.
+These visualizations are obtained using air or foam bubbles, or Particle Image Velocimetry (PIV) which is described in later sections.
+
+\subsubsection{Flowcoach Operation}
+
+First, the main reservoir was filled till the water level was around 10cm from the bottom while the system was running.
+Then, the prescribed insert model was placed into the test section, ensuring that for the venturi model, the pressure ports were aligned.
+Afterward, the cap on the upper reservoir and the reservoir vent valve were securely closed.
+Next, the water level in the upper reservoir was increased to fully cover the agitator.
+Finally, the flow rate was controlled to the desired value using the rotameter control knob.
+
+\subsubsection{Flow Visualization}
+
+The flow of molecules can be physically observed by generating bubbles or foam.
+To generate bubbles, the red reservoir vent valve was opened and the flow rate was increased above 1.3 GPM.
+To stop generating bubbles, the red reservoir vent valve was closed.
+
+To generate foam, the main pump was turned off and the cap on the upper reservoir was removed.
+A small drop of foam solution was added into the reservoir which was then closed.
+
+
+\subsection{Computational Fluid Dynamics Solver}
+
 
 \section{Technical Background}
 
